@@ -1,0 +1,116 @@
+.header-logo{
+  margin: 2.5rem;
+}
+
+// Header_search_text
+
+.header_search_text{
+  display: flex;
+  flex-direction: row;
+
+  align-self: center;
+  align-items: center;
+}
+.header-wrapper {
+  justify-content: space-around;
+}
+
+.header-text {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.search {
+  flex: 0 0 40%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
+  &__input {
+    
+      font-family: inherit;
+      font-size: inherit;
+      color: inherit;
+      background-color: #f4f2f2;
+      border: none;
+      padding: 1.5rem ;
+      border-radius: 100px;
+      width: 90%;
+      transition: all .2s;
+      margin-right: -3.25rem;
+
+      &:focus {
+          outline: none;
+          width: 100%;
+          background-color: #f0eeee;
+      }
+
+      &::-webkit-input-placeholder {
+          font-weight: 100;
+          color: #ccc;
+      }
+  }
+
+  &__input:focus + &__button {
+      background-color: #f0eeee;
+  }
+
+  &__button {
+      border: none;
+      background-color: #f4f2f2;
+
+      &:focus {
+          outline: none;
+      }
+
+      &:active {
+          transform: translateY(2px);
+      }
+  }
+
+  .icon {
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+  }
+}
+
+// header dp and data
+
+.header-dp {
+  display: flex;
+  align-self: center;
+
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 3rem;
+}
+
+.header-icons-add,
+.header-icons-notification {
+  cursor: pointer;
+  height: 3rem;
+  width: 3rem;
+  margin-right: 1.5rem;
+}
+
+.header-icons-notification {
+  padding-right: 1rem;
+  border-right: 2px solid rgba(0, 0, 0, 0.144);
+  width: 4rem;
+}
+
+.small-dp {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  margin-bottom: -8px;
+}
+
+.header-dp-txt {
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: 1000;
+}

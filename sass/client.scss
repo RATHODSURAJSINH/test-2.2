@@ -1,0 +1,170 @@
+/* =============> client msgs <==============*/
+
+.message-bar {
+    padding: 5%;
+    margin-top: 4%;
+    overflow: scroll;
+    overflow-x: hidden;
+  
+  
+    scrollbar-width: thin;
+    --webkit-scrollbar-width: thin;
+   
+  }
+  
+  
+  .client-msg-wrapper {
+    justify-content: space-around;
+    font-size: 1.5rem;
+  }
+  
+  .client-msg-header {
+    display: flex;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.13);
+    padding-bottom: 2%;
+    align-items: center;
+  }
+  
+  .msg-bar-header {
+    margin-right: auto;
+  }
+  
+  .msg-bar-header h4 {
+    font-size: 2rem;
+  }
+  
+  
+  .msg-bar-search,
+  .msg-bar-two_dots {
+    cursor: pointer;
+  }
+  
+  .msg-bar-search {
+    height: 2rem;
+    width: 5rem;
+  }
+  
+  .msg-bar-two_dots {
+    height: 2rem;
+    width: 2rem;
+    color: rgba(0, 0, 0, 0.781);
+  }
+  
+  .msg-card {
+    display: grid;
+    grid-template-areas:
+      "image name star"
+      "image msg msg"
+      "image . date";
+  }
+  
+  .msg-card-1 {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.13);
+    padding: 1px 1px 16px 1px;
+    margin-top: 3%;
+    transition: all 0.2s;
+  }
+  
+ 
+  
+  .msg-card-1:hover {
+        transform: translateY(-0.5rem);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 5);
+        border-radius: 5px; 
+        background-color: white;
+    
+        &::after {
+          transform: scaleX(1.4) scaleY(1.6);
+          opacity: 0; 
+         
+      }
+      
+      
+      &:active,
+      &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.699); 
+      }
+      
+  }
+    
+    
+    
+    
+     
+    
+  
+  
+  .client-pic {
+    grid-area: image;
+  
+    display: flex;
+    align-items: center;
+    width: 4.7em;
+  }
+  
+  .client-dp {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+  }
+  
+  .client-name {
+    grid-area: name;
+  
+    display: flex;
+    align-items: center;
+  }
+  
+  .client-name h5 {
+    color: rgba(0, 0, 0, 0.849);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  
+ 
+  
+  .star {
+    grid-area: star;
+  
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    cursor: pointer;
+  }
+  
+  .empty-star,
+  .filled-star {
+    height: 1.5rem;
+    width: 1.5rem;
+    transition: all 0.2s;
+  }
+  
+  .empty-star:hover,
+  .filled-star:hover {
+    transform: scale(1.15);
+  }
+  
+  .msg-body {
+    grid-area: msg;
+  }
+  
+  .msg-body p {
+    font-size: 1.5rem;
+    color: rgb(90, 90, 90);
+    font-weight: 400;
+  }
+  
+  
+  
+  .msg-date {
+    grid-area: date;
+    margin-left: auto;
+  }
+  
+  .msg-date h6 {
+    font-weight: 300;
+  }
+  
+  /* <========================================> */
